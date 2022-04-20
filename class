@@ -1,0 +1,114 @@
+import 'dart:io';
+
+// class Player {
+//   String _playerName;
+//   double _average;
+//   String _team;
+
+//   Player({ this._playerName ,  this._average ,  this._team});
+
+//   getData(playerName, hours , team) {
+//     this._playerName = playerName;
+//     this._average = average;
+//     this._team = team;
+//   }
+
+//   add(Player t) {
+//     this.average = this.average + t.average;
+//     this.playerName = this.playerName + average;
+//     return this;
+//   }
+
+//   void showData() {
+//     print("playerName : $playerName");
+//     print("average : $average");
+//   }
+
+class BankAccount {
+  String _name;
+  int _number;
+  String _type;
+  int _balance;
+  int _deposit;
+  int _withdraw;
+
+  BankAccount(this._name, this._number, this._type, this._balance,
+      this._deposit, this._withdraw);
+
+  void set name(String _name) {
+    this._name = _name;
+  }
+
+  String get name {
+    return _name;
+  }
+
+  void set number(int number) {
+    this._number = number;
+  }
+
+  int get number {
+    return _number;
+  }
+
+  void set type(String type) {
+    this._type = type;
+  }
+
+  String get type {
+    return _type;
+  }
+
+  void set balance(int balance) {
+    this._balance = balance;
+  }
+
+  int get balance {
+    return _balance;
+  }
+
+  void set deposit(int deposit) {
+    this._deposit = deposit;
+  }
+
+  int get deposit {
+    return _deposit;
+  }
+
+  void set withdraw(int withdraw) {
+    this._withdraw = deposit;
+  }
+
+  int get withdraw {
+    return _withdraw;
+  }
+
+  void input(String _name, int _number, String _type, int _balance,
+      int _deposit, int _withdraw) {
+    this._name = _name;
+    this._number = _number;
+    this._type = _type;
+    this._balance = _balance;
+    this._withdraw = _withdraw;
+  }
+
+  void deposite() {
+    _deposit = _balance + _deposit;
+    print("Deposite Ammount : $_deposit");
+  }
+
+  void Withdraw() {
+    _withdraw = _balance - _withdraw;
+    print("Withdrawn Ammount : $_withdraw");
+  }
+
+  void showData() {
+    print("Name Of The Depositor : $_name");
+    print("");
+    print("Account Number : $_number");
+    print("");
+    print("Type Of Account : $_type");
+    print("");
+    print("Balance Amount in the account : $_balance");
+  }
+}
